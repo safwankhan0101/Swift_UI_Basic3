@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var numberofItem = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+            
+                 Image(systemName: "heart.fill")
+                     .resizable()
+            .aspectRatio(contentMode: .fit)
+              .scaledToFit()
+                       .scaledToFill()
+            //            .font(.largeTitle)
+            //            .foregroundStyle(.red)
+            //            .frame(width: 300, height: 300)
+            //            .clipped()
         }
-        .padding()
-    }
-}
+   }
 
 #Preview {
     ContentView()
