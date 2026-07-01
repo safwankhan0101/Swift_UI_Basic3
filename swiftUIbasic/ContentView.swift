@@ -18,8 +18,8 @@ struct ContentView: View {
               .scaledToFit()
                        .scaledToFill()
             //            .font(.largeTitle)
-            //            .foregroundStyle(.red)
-            //            .frame(width: 300, height: 300)
+                       .foregroundStyle(.red)
+                        .frame(width: 300, height: 300)
             //            .clipped()
         }
    }

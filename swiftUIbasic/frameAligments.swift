@@ -9,7 +9,20 @@ import SwiftUI
 
 struct frameAligments: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("i am safwan khan")
+            .frame(width: 100, alignment: .bottom)
+            .background(.orange)
+            .frame(width: 150, alignment: .leading)
+            .background(.blue)
+            .frame(height: 200)
+            .background(.yellow)
+            .frame(maxWidth: .infinity,alignment: .bottom)
+            .background(.green)
+            .frame(maxHeight: .infinity, alignment:.bottom)
+            .background(.pink)
+        
+        
+           
     }
 }
 

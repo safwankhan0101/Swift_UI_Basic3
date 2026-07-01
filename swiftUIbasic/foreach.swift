@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct foreach: View {
+    let data: [String] = ["apple", "banana", "orange","mango"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            NavigationStack {
+                VStack{
+                    ForEach(data.indices){ index in
+                        Text("New item : \(data[index])")
+                    }
+                }
+                .navigationTitle("NEW item")
+            }
+        }
     }
-}
+
 
 #Preview {
     foreach()
